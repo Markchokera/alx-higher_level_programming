@@ -3,5 +3,8 @@
 # Get the Python file name from the environment variable
 PYFILE="$PYFILE"
 
+# Provide the full path to the Python file if it's not in the same directory
+PYTHON_SCRIPT="/path/to/directory/$PYFILE"
+
 # Run the Python script
-python3 "$PYFILE"
+python3 "$PYTHON_SCRIPT"
